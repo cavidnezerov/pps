@@ -18,7 +18,7 @@ public class PpsController {
     private final PpsService ppsService;
 
     @PostMapping(value = "/reports", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = "application/json")
-    public PayrollResponse saveUsers(@RequestParam(value = "files") MultipartFile[] files) {
+    public PayrollResponse processPayroll(@RequestParam(value = "files") MultipartFile[] files) {
         return ppsService.processPayroll(files);
     }
 }
