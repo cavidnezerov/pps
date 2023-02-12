@@ -12,7 +12,7 @@ import payroll.processing.system.pps.service.PpsService;
 
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 @RequiredArgsConstructor
 public class PpsController {
     private final PpsService ppsService;
